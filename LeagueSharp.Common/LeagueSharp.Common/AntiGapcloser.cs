@@ -100,7 +100,20 @@ namespace LeagueSharp.Common
                 });
 
             #endregion
-
+            
+            #region Corki
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                   ChampionName = "Corki",
+                   Slot = SpellSlot.W,
+                   SpellName = "CarpetBomb",
+                   SkillType = GapcloserType.Skillshot
+                });
+            
+            #endregion
+            
             #region LeeSin
 
             Spells.Add(
@@ -109,7 +122,7 @@ namespace LeagueSharp.Common
                     ChampionName = "LeeSin",
                     Slot = SpellSlot.Q,
                     SpellName = "blindmonkqtwo",
-                    SkillType = GapcloserType.Skillshot
+                    SkillType = GapcloserType.Targeted
                 });
 
             #endregion
@@ -165,6 +178,19 @@ namespace LeagueSharp.Common
                 });
 
             #endregion
+            
+            #region Elise
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Elise",
+                    Slot = SpellSlot.Q,
+                    SpellName = "EliseSpiderQCast",
+                    SkillType = GapcloserType.Targeted
+                });
+            
+            #endregion
 
             #region Gnar
 
@@ -176,7 +202,16 @@ namespace LeagueSharp.Common
                     SpellName = "gnarbige",
                     SkillType = GapcloserType.Skillshot
                 });
-
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Gnar",
+                    Slot = SpellSlot.E,
+                    SpellName = "GnarE",
+                    SkillType = GapcloserType.Skillshot
+                });
+                
             #endregion
 
             #region Gragas
@@ -190,6 +225,19 @@ namespace LeagueSharp.Common
                     SkillType = GapcloserType.Skillshot
                 });
 
+            #endregion
+            
+            #region Graves
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Graves",
+                    Slot = SpellSlot.E,
+                    SpellName = "GravesMove",
+                    SkillType = GapcloserType.Skillshot
+                });
+            
             #endregion
 
             #region Hecarim
@@ -243,7 +291,33 @@ namespace LeagueSharp.Common
                 });
 
             #endregion
-
+            
+            #region Jayce
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Jayce",
+                    Slot = SpellSlot.Q,
+                    SpellName = "JayceToTheSkies",
+                    SkillType = GapcloserType.Targeted
+                });
+            
+            #endregion
+            
+            #region Kassadin
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Kassadin",
+                    Slot = SpellSlot.R,
+                    SpellName = "RiftWalk",
+                    SkillType = GapcloserType.Skillshot
+                });
+            
+            #endregion
+            
             #region Khazix
 
             Spells.Add(
@@ -300,7 +374,20 @@ namespace LeagueSharp.Common
                 });
 
             #endregion
-
+            
+            #region MasterYi
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "MasterYi",
+                    Slot = SpellSlot.Q,
+                    SpellName = "AlphaStrike",
+                    SkillType = GapcloserType.Targeted
+                });
+            
+            #endregion
+            
             #region MonkeyKing
 
             Spells.Add(
@@ -324,7 +411,25 @@ namespace LeagueSharp.Common
                     SpellName = "pantheon_leapbash",
                     SkillType = GapcloserType.Targeted
                 });
-
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Pantheon",
+                    Slot = SpellSlot.R,
+                    SpellName = "PantheonRJump",
+                    SkillType = GapcloserType.Skillshot
+                });
+                
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Pantheon",
+                    Slot = SpellSlot.R,
+                    SpellName = "PantheonRFall",
+                    SkillType = GapcloserType.Skillshot
+                });
+                 
             #endregion
 
             #region Poppy
@@ -363,6 +468,15 @@ namespace LeagueSharp.Common
                     SpellName = "riventricleave",
                     SkillType = GapcloserType.Skillshot
                 });
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Riven",
+                    Slot = SpellSlot.E,
+                    SpellName = "RivenFeint",
+                    SkillType = GapcloserType.Skillshot
+                });
 
             #endregion
 
@@ -378,7 +492,33 @@ namespace LeagueSharp.Common
                 });
 
             #endregion
-
+            
+            #region Shen
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Shen",
+                    Slot = SpellSlot.E,
+                    SpellName = "ShenShadowDash",
+                    SkillType = GapcloserType.Skillshot
+                });
+            
+            #endregion
+            
+            #region Shyvana
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Shyvana",
+                    Slot = SpellSlot.R,
+                    SpellName = "ShyvanaTransformCast",
+                    SkillType = GapcloserType.Skillshot
+                });
+            
+            #endregion
+            
             #region Malphite
 
             Spells.Add(
@@ -387,11 +527,50 @@ namespace LeagueSharp.Common
                     ChampionName = "Malphite",
                     Slot = SpellSlot.R,
                     SpellName = "ufslash",
-                    SkillType = GapcloserType.Targeted
+                    SkillType = GapcloserType.Skillshot
                 });
 
             #endregion
-
+            
+            #region Talon
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Talon",
+                    Slot = SpellSlot.E,
+                    SpellName = "TalonCutthroat",
+                    SkillType = GapcloserType.Targeted
+                });
+            
+            #endregion
+            
+            #region Tristana
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Tristana",
+                    Slot = SpellSlot.W,
+                    SpellName = "RocketJump",
+                    SkillType = GapcloserType.Skillshot
+                });
+            
+            #endregion
+            
+            #region Tryndamere
+            
+            Spells.Add(
+                new Gapcloser
+                {
+                    ChampionName = "Tryndamere",
+                    Slot = SpellSlot.E,
+                    SpellName = "Slash",
+                    SkillType = GapcloserType.Skillshot
+                });
+            
+            #endregion
+            
             #region Vi
 
             Spells.Add(
